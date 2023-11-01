@@ -28,10 +28,6 @@ public class DbConnection {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			System.out.println("Driver loaded");
-
-//			Connection con = DriverManager.getConnection(
-//					"jdbc:mysql://localhost:9090/cfwebbeta", "pratik",
-//					"r<)SDv0hvXtzH");
 			Connection con = DriverManager.getConnection(
 					"data base url server", "username ",
 					"userpassword");
@@ -39,7 +35,7 @@ public class DbConnection {
 
 			Statement smt = con.createStatement();
 			ResultSet rsotp = smt.executeQuery(
-					"write query here");
+			"write query here");
 			while (rsotp.next()) {
 
 				otp = rsotp.getString("otp");
